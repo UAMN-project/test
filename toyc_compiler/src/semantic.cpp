@@ -78,6 +78,15 @@ void SemanticAnalyzer::analyzeStmt(Stmt* stmt) {
         }
         analyzeExpr(assign->value.get());
     }
+    else if (auto exprStmt = dynamic_cast<ExprStmt*>(stmt)) {
+        analyzeExpr(exprStmt->expr.get());
+    }
+    else if (auto ret = dynamic_cast<ReturnStmt*>(stmt)) {
+        if (ret->expr) analyzeExpr(ret->expr.get());
+    }
+    else if (auto block = dynamic_cast<Block*>(stmt)) {
+        analyzeBlock(block);
+    }
     else if (auto ifStmt = dynamic_cast<IfStmt*>(stmt)) {
         analyzeExpr(ifStmt->condition.get());
         analyzeStmt(ifStmt->thenBlock.get());
