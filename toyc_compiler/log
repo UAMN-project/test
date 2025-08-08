@@ -1,0 +1,326 @@
+In file included from toyc_compiler/include/semantic.h:4,
+                 from toyc_compiler/test/test_semantic.cpp:1:
+toyc_compiler/include/ast.h:39:36: error: ‘Type’ has not been declared
+   39 |     FuncDef(const std::string &rt, Type type) : retType(rt), name("") {
+      |                                    ^~~~
+toyc_compiler/include/ast.h:43:5: error: ‘FuncDef::FuncDef(const std::string&, int)’ cannot be overloaded with ‘FuncDef::FuncDef(const std::string&, int)’
+   43 |     FuncDef(const std::string &rt, int /*type*/) : retType(rt), name("") {}
+      |     ^~~~~~~
+toyc_compiler/include/ast.h:39:5: note: previous declaration ‘FuncDef::FuncDef(const std::string&, int)’
+   39 |     FuncDef(const std::string &rt, Type type) : retType(rt), name("") {
+      |     ^~~~~~~
+toyc_compiler/include/ast.h:69:40: error: ‘Type’ has not been declared
+   69 |     VarDeclStmt(const std::string &vt, Type type, std::unique_ptr<Expr> init)
+      |                                        ^~~~
+toyc_compiler/include/ast.h:74:5: error: ‘VarDeclStmt::VarDeclStmt(const std::string&, int, std::unique_ptr<Expr>)’ cannot be overloaded with ‘VarDeclStmt::VarDeclStmt(const std::string&, int, std::unique_ptr<Expr>)’
+   74 |     VarDeclStmt(const std::string &vt, int /*type*/, std::unique_ptr<Expr> init)
+      |     ^~~~~~~~~~~
+toyc_compiler/include/ast.h:69:5: note: previous declaration ‘VarDeclStmt::VarDeclStmt(const std::string&, int, std::unique_ptr<Expr>)’
+   69 |     VarDeclStmt(const std::string &vt, Type type, std::unique_ptr<Expr> init)
+      |     ^~~~~~~~~~~
+In file included from toyc_compiler/include/parser.h:3,
+                 from toyc_compiler/test/test_parser.cpp:2:
+toyc_compiler/include/ast.h:39:36: error: ‘Type’ has not been declared
+   39 |     FuncDef(const std::string &rt, Type type) : retType(rt), name("") {
+      |                                    ^~~~
+toyc_compiler/include/ast.h:43:5: error: ‘FuncDef::FuncDef(const std::string&, int)’ cannot be overloaded with ‘FuncDef::FuncDef(const std::string&, int)’
+   43 |     FuncDef(const std::string &rt, int /*type*/) : retType(rt), name("") {}
+      |     ^~~~~~~
+toyc_compiler/include/ast.h:39:5: note: previous declaration ‘FuncDef::FuncDef(const std::string&, int)’
+   39 |     FuncDef(const std::string &rt, Type type) : retType(rt), name("") {
+      |     ^~~~~~~
+toyc_compiler/include/ast.h:69:40: error: ‘Type’ has not been declared
+   69 |     VarDeclStmt(const std::string &vt, Type type, std::unique_ptr<Expr> init)
+      |                                        ^~~~
+toyc_compiler/include/ast.h:74:5: error: ‘VarDeclStmt::VarDeclStmt(const std::string&, int, std::unique_ptr<Expr>)’ cannot be overloaded with ‘VarDeclStmt::VarDeclStmt(const std::string&, int, std::unique_ptr<Expr>)’
+   74 |     VarDeclStmt(const std::string &vt, int /*type*/, std::unique_ptr<Expr> init)
+      |     ^~~~~~~~~~~
+toyc_compiler/include/ast.h:69:5: note: previous declaration ‘VarDeclStmt::VarDeclStmt(const std::string&, int, std::unique_ptr<Expr>)’
+   69 |     VarDeclStmt(const std::string &vt, Type type, std::unique_ptr<Expr> init)
+      |     ^~~~~~~~~~~
+In file included from toyc_compiler/include/parser.h:3,
+                 from toyc_compiler/src/parser.cpp:1:
+toyc_compiler/include/ast.h:39:36: error: ‘Type’ has not been declared
+   39 |     FuncDef(const std::string &rt, Type type) : retType(rt), name("") {
+      |                                    ^~~~
+toyc_compiler/include/ast.h:43:5: error: ‘FuncDef::FuncDef(const std::string&, int)’ cannot be overloaded with ‘FuncDef::FuncDef(const std::string&, int)’
+   43 |     FuncDef(const std::string &rt, int /*type*/) : retType(rt), name("") {}
+      |     ^~~~~~~
+toyc_compiler/include/ast.h:39:5: note: previous declaration ‘FuncDef::FuncDef(const std::string&, int)’
+   39 |     FuncDef(const std::string &rt, Type type) : retType(rt), name("") {
+      |     ^~~~~~~
+toyc_compiler/include/ast.h:69:40: error: ‘Type’ has not been declared
+   69 |     VarDeclStmt(const std::string &vt, Type type, std::unique_ptr<Expr> init)
+      |                                        ^~~~
+toyc_compiler/include/ast.h:74:5: error: ‘VarDeclStmt::VarDeclStmt(const std::string&, int, std::unique_ptr<Expr>)’ cannot be overloaded with ‘VarDeclStmt::VarDeclStmt(const std::string&, int, std::unique_ptr<Expr>)’
+   74 |     VarDeclStmt(const std::string &vt, int /*type*/, std::unique_ptr<Expr> init)
+      |     ^~~~~~~~~~~
+toyc_compiler/include/ast.h:69:5: note: previous declaration ‘VarDeclStmt::VarDeclStmt(const std::string&, int, std::unique_ptr<Expr>)’
+   69 |     VarDeclStmt(const std::string &vt, Type type, std::unique_ptr<Expr> init)
+      |     ^~~~~~~~~~~
+In file included from toyc_compiler/include/semantic.h:4,
+                 from toyc_compiler/src/semantic.cpp:1:
+toyc_compiler/include/ast.h:39:36: error: ‘Type’ has not been declared
+   39 |     FuncDef(const std::string &rt, Type type) : retType(rt), name("") {
+      |                                    ^~~~
+toyc_compiler/include/ast.h:43:5: error: ‘FuncDef::FuncDef(const std::string&, int)’ cannot be overloaded with ‘FuncDef::FuncDef(const std::string&, int)’
+   43 |     FuncDef(const std::string &rt, int /*type*/) : retType(rt), name("") {}
+      |     ^~~~~~~
+toyc_compiler/include/ast.h:39:5: note: previous declaration ‘FuncDef::FuncDef(const std::string&, int)’
+   39 |     FuncDef(const std::string &rt, Type type) : retType(rt), name("") {
+      |     ^~~~~~~
+In file included from toyc_compiler/include/codegen.h:2,
+                 from toyc_compiler/test/test_codegen.cpp:1:
+toyc_compiler/include/ast.h:39:36: error: ‘Type’ has not been declared
+   39 |     FuncDef(const std::string &rt, Type type) : retType(rt), name("") {
+      |                                    ^~~~
+toyc_compiler/include/ast.h:43:5: error: ‘FuncDef::FuncDef(const std::string&, int)’ cannot be overloaded with ‘FuncDef::FuncDef(const std::string&, int)’
+   43 |     FuncDef(const std::string &rt, int /*type*/) : retType(rt), name("") {}
+      |     ^~~~~~~
+toyc_compiler/include/ast.h:39:5: note: previous declaration ‘FuncDef::FuncDef(const std::string&, int)’
+   39 |     FuncDef(const std::string &rt, Type type) : retType(rt), name("") {
+      |     ^~~~~~~
+In file included from toyc_compiler/include/parser.h:3,
+                 from toyc_compiler/src/main.cpp:2:
+toyc_compiler/include/ast.h:39:36: error: ‘Type’ has not been declared
+   39 |     FuncDef(const std::string &rt, Type type) : retType(rt), name("") {
+      |                                    ^~~~
+toyc_compiler/include/ast.h:43:5: error: ‘FuncDef::FuncDef(const std::string&, int)’ cannot be overloaded with ‘FuncDef::FuncDef(const std::string&, int)’
+   43 |     FuncDef(const std::string &rt, int /*type*/) : retType(rt), name("") {}
+      |     ^~~~~~~
+toyc_compiler/include/ast.h:39:5: note: previous declaration ‘FuncDef::FuncDef(const std::string&, int)’
+   39 |     FuncDef(const std::string &rt, Type type) : retType(rt), name("") {
+      |     ^~~~~~~
+toyc_compiler/include/ast.h:69:40: error: ‘Type’ has not been declared
+   69 |     VarDeclStmt(const std::string &vt, Type type, std::unique_ptr<Expr> init)
+      |                                        ^~~~
+toyc_compiler/include/ast.h:74:5: error: ‘VarDeclStmt::VarDeclStmt(const std::string&, int, std::unique_ptr<Expr>)’ cannot be overloaded with ‘VarDeclStmt::VarDeclStmt(const std::string&, int, std::unique_ptr<Expr>)’
+   74 |     VarDeclStmt(const std::string &vt, int /*type*/, std::unique_ptr<Expr> init)
+      |     ^~~~~~~~~~~
+toyc_compiler/include/ast.h:69:5: note: previous declaration ‘VarDeclStmt::VarDeclStmt(const std::string&, int, std::unique_ptr<Expr>)’
+   69 |     VarDeclStmt(const std::string &vt, Type type, std::unique_ptr<Expr> init)
+      |     ^~~~~~~~~~~
+toyc_compiler/include/ast.h:69:40: error: ‘Type’ has not been declared
+   69 |     VarDeclStmt(const std::string &vt, Type type, std::unique_ptr<Expr> init)
+      |                                        ^~~~
+toyc_compiler/include/ast.h:74:5: error: ‘VarDeclStmt::VarDeclStmt(const std::string&, int, std::unique_ptr<Expr>)’ cannot be overloaded with ‘VarDeclStmt::VarDeclStmt(const std::string&, int, std::unique_ptr<Expr>)’
+   74 |     VarDeclStmt(const std::string &vt, int /*type*/, std::unique_ptr<Expr> init)
+      |     ^~~~~~~~~~~
+toyc_compiler/include/ast.h:69:5: note: previous declaration ‘VarDeclStmt::VarDeclStmt(const std::string&, int, std::unique_ptr<Expr>)’
+   69 |     VarDeclStmt(const std::string &vt, Type type, std::unique_ptr<Expr> init)
+      |     ^~~~~~~~~~~
+toyc_compiler/include/ast.h:69:40: error: ‘Type’ has not been declared
+   69 |     VarDeclStmt(const std::string &vt, Type type, std::unique_ptr<Expr> init)
+      |                                        ^~~~
+toyc_compiler/include/ast.h:74:5: error: ‘VarDeclStmt::VarDeclStmt(const std::string&, int, std::unique_ptr<Expr>)’ cannot be overloaded with ‘VarDeclStmt::VarDeclStmt(const std::string&, int, std::unique_ptr<Expr>)’
+   74 |     VarDeclStmt(const std::string &vt, int /*type*/, std::unique_ptr<Expr> init)
+      |     ^~~~~~~~~~~
+toyc_compiler/include/ast.h:69:5: note: previous declaration ‘VarDeclStmt::VarDeclStmt(const std::string&, int, std::unique_ptr<Expr>)’
+   69 |     VarDeclStmt(const std::string &vt, Type type, std::unique_ptr<Expr> init)
+      |     ^~~~~~~~~~~
+In file included from /usr/include/c++/13/memory:78,
+                 from toyc_compiler/include/ast.h:5:
+/usr/include/c++/13/bits/unique_ptr.h: In instantiation of ‘std::__detail::__unique_ptr_t<_Tp> std::make_unique(_Args&& ...) [with _Tp = FuncDef; _Args = {const char (&)[5], Type}; __detail::__unique_ptr_t<_Tp> = __detail::__unique_ptr_t<FuncDef>]’:
+toyc_compiler/test/test_semantic.cpp:9:42:   required from here
+/usr/include/c++/13/bits/unique_ptr.h:1070:30: error: no matching function for call to ‘FuncDef::FuncDef(const char [5], Type)’
+ 1070 |     { return unique_ptr<_Tp>(new _Tp(std::forward<_Args>(__args)...)); }
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+toyc_compiler/include/ast.h:39:5: note: candidate: ‘FuncDef::FuncDef(const std::string&, int)’
+   39 |     FuncDef(const std::string &rt, Type type) : retType(rt), name("") {
+      |     ^~~~~~~
+toyc_compiler/include/ast.h:39:41: note:   no known conversion for argument 2 from ‘Type’ to ‘int’
+   39 |     FuncDef(const std::string &rt, Type type) : retType(rt), name("") {
+      |                                    ~~~~~^~~~
+toyc_compiler/include/ast.h:37:5: note: candidate: ‘FuncDef::FuncDef(const std::string&, const std::string&)’
+   37 |     FuncDef(const std::string &rt, const std::string &n) : retType(rt), name(n) {}
+      |     ^~~~~~~
+toyc_compiler/include/ast.h:37:55: note:   no known conversion for argument 2 from ‘Type’ to ‘const std::string&’ {aka ‘const std::__cxx11::basic_string<char>&’}
+   37 |     FuncDef(const std::string &rt, const std::string &n) : retType(rt), name(n) {}
+      |                                    ~~~~~~~~~~~~~~~~~~~^
+toyc_compiler/include/ast.h:22:8: note: candidate: ‘FuncDef::FuncDef(FuncDef&&)’
+   22 | struct FuncDef : ASTNode {
+      |        ^~~~~~~
+toyc_compiler/include/ast.h:22:8: note:   candidate expects 1 argument, 2 provided
+/usr/include/c++/13/bits/unique_ptr.h: In instantiation of ‘std::__detail::__unique_ptr_t<_Tp> std::make_unique(_Args&& ...) [with _Tp = VarDeclStmt; _Args = {const char (&)[2], Type, unique_ptr<NumberExpr, default_delete<NumberExpr> >}; __detail::__unique_ptr_t<_Tp> = __detail::__unique_ptr_t<VarDeclStmt>]’:
+toyc_compiler/test/test_semantic.cpp:40:51:   required from here
+/usr/include/c++/13/bits/unique_ptr.h:1070:30: error: no matching function for call to ‘VarDeclStmt::VarDeclStmt(const char [2], Type, std::unique_ptr<NumberExpr, std::default_delete<NumberExpr> >)’
+ 1070 |     { return unique_ptr<_Tp>(new _Tp(std::forward<_Args>(__args)...)); }
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+toyc_compiler/include/ast.h:69:5: note: candidate: ‘VarDeclStmt::VarDeclStmt(const std::string&, int, std::unique_ptr<Expr>)’
+   69 |     VarDeclStmt(const std::string &vt, Type type, std::unique_ptr<Expr> init)
+      |     ^~~~~~~~~~~
+toyc_compiler/include/ast.h:69:45: note:   no known conversion for argument 2 from ‘Type’ to ‘int’
+   69 |     VarDeclStmt(const std::string &vt, Type type, std::unique_ptr<Expr> init)
+      |                                        ~~~~~^~~~
+toyc_compiler/include/ast.h:65:5: note: candidate: ‘VarDeclStmt::VarDeclStmt(const std::string&, const std::string&, std::unique_ptr<Expr>)’
+   65 |     VarDeclStmt(const std::string &vt, const std::string &n, std::unique_ptr<Expr> init)
+      |     ^~~~~~~~~~~
+toyc_compiler/include/ast.h:65:59: note:   no known conversion for argument 2 from ‘Type’ to ‘const std::string&’ {aka ‘const std::__cxx11::basic_string<char>&’}
+   65 |     VarDeclStmt(const std::string &vt, const std::string &n, std::unique_ptr<Expr> init)
+      |                                        ~~~~~~~~~~~~~~~~~~~^
+toyc_compiler/include/ast.h:60:8: note: candidate: ‘VarDeclStmt::VarDeclStmt(VarDeclStmt&&)’
+   60 | struct VarDeclStmt : Stmt {
+      |        ^~~~~~~~~~~
+toyc_compiler/include/ast.h:60:8: note:   candidate expects 1 argument, 3 provided
+/usr/include/c++/13/bits/unique_ptr.h: In instantiation of ‘std::__detail::__unique_ptr_t<_Tp> std::make_unique(_Args&& ...) [with _Tp = FuncDef; _Args = {const char (&)[4], Type}; __detail::__unique_ptr_t<_Tp> = __detail::__unique_ptr_t<FuncDef>]’:
+toyc_compiler/test/test_semantic.cpp:90:41:   required from here
+/usr/include/c++/13/bits/unique_ptr.h:1070:30: error: no matching function for call to ‘FuncDef::FuncDef(const char [4], Type)’
+ 1070 |     { return unique_ptr<_Tp>(new _Tp(std::forward<_Args>(__args)...)); }
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+toyc_compiler/include/ast.h:39:5: note: candidate: ‘FuncDef::FuncDef(const std::string&, int)’
+   39 |     FuncDef(const std::string &rt, Type type) : retType(rt), name("") {
+      |     ^~~~~~~
+toyc_compiler/include/ast.h:39:41: note:   no known conversion for argument 2 from ‘Type’ to ‘int’
+   39 |     FuncDef(const std::string &rt, Type type) : retType(rt), name("") {
+      |                                    ~~~~~^~~~
+toyc_compiler/include/ast.h:37:5: note: candidate: ‘FuncDef::FuncDef(const std::string&, const std::string&)’
+   37 |     FuncDef(const std::string &rt, const std::string &n) : retType(rt), name(n) {}
+      |     ^~~~~~~
+toyc_compiler/include/ast.h:37:55: note:   no known conversion for argument 2 from ‘Type’ to ‘const std::string&’ {aka ‘const std::__cxx11::basic_string<char>&’}
+   37 |     FuncDef(const std::string &rt, const std::string &n) : retType(rt), name(n) {}
+      |                                    ~~~~~~~~~~~~~~~~~~~^
+toyc_compiler/include/ast.h:22:8: note: candidate: ‘FuncDef::FuncDef(FuncDef&&)’
+   22 | struct FuncDef : ASTNode {
+      |        ^~~~~~~
+toyc_compiler/include/ast.h:22:8: note:   candidate expects 1 argument, 2 provided
+make[2]: *** [CMakeFiles/test_parser.dir/build.make:76: CMakeFiles/test_parser.dir/test/test_parser.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:143: CMakeFiles/test_parser.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make[2]: *** [CMakeFiles/test_semantic.dir/build.make:76: CMakeFiles/test_semantic.dir/test/test_semantic.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+make[2]: *** [CMakeFiles/test_semantic.dir/build.make:104: CMakeFiles/test_semantic.dir/src/parser.cpp.o] Error 1
+make[2]: *** [CMakeFiles/test_semantic.dir/build.make:118: CMakeFiles/test_semantic.dir/src/semantic.cpp.o] Error 1
+In file included from toyc_compiler/include/codegen.h:2,
+                 from toyc_compiler/src/codegen.cpp:1:
+toyc_compiler/include/ast.h:39:36: error: ‘Type’ has not been declared
+   39 |     FuncDef(const std::string &rt, Type type) : retType(rt), name("") {
+      |                                    ^~~~
+toyc_compiler/include/ast.h:43:5: error: ‘FuncDef::FuncDef(const std::string&, int)’ cannot be overloaded with ‘FuncDef::FuncDef(const std::string&, int)’
+   43 |     FuncDef(const std::string &rt, int /*type*/) : retType(rt), name("") {}
+      |     ^~~~~~~
+toyc_compiler/include/ast.h:39:5: note: previous declaration ‘FuncDef::FuncDef(const std::string&, int)’
+   39 |     FuncDef(const std::string &rt, Type type) : retType(rt), name("") {
+      |     ^~~~~~~
+make[2]: *** [CMakeFiles/toyc.dir/build.make:76: CMakeFiles/toyc.dir/src/main.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+toyc_compiler/include/ast.h:69:40: error: ‘Type’ has not been declared
+   69 |     VarDeclStmt(const std::string &vt, Type type, std::unique_ptr<Expr> init)
+      |                                        ^~~~
+toyc_compiler/include/ast.h:74:5: error: ‘VarDeclStmt::VarDeclStmt(const std::string&, int, std::unique_ptr<Expr>)’ cannot be overloaded with ‘VarDeclStmt::VarDeclStmt(const std::string&, int, std::unique_ptr<Expr>)’
+   74 |     VarDeclStmt(const std::string &vt, int /*type*/, std::unique_ptr<Expr> init)
+      |     ^~~~~~~~~~~
+toyc_compiler/include/ast.h:69:5: note: previous declaration ‘VarDeclStmt::VarDeclStmt(const std::string&, int, std::unique_ptr<Expr>)’
+   69 |     VarDeclStmt(const std::string &vt, Type type, std::unique_ptr<Expr> init)
+      |     ^~~~~~~~~~~
+In file included from toyc_compiler/include/parser.h:3,
+                 from toyc_compiler/src/parser.cpp:1:
+toyc_compiler/include/ast.h:39:36: error: ‘Type’ has not been declared
+   39 |     FuncDef(const std::string &rt, Type type) : retType(rt), name("") {
+      |                                    ^~~~
+toyc_compiler/include/ast.h:43:5: error: ‘FuncDef::FuncDef(const std::string&, int)’ cannot be overloaded with ‘FuncDef::FuncDef(const std::string&, int)’
+   43 |     FuncDef(const std::string &rt, int /*type*/) : retType(rt), name("") {}
+      |     ^~~~~~~
+toyc_compiler/include/ast.h:39:5: note: previous declaration ‘FuncDef::FuncDef(const std::string&, int)’
+   39 |     FuncDef(const std::string &rt, Type type) : retType(rt), name("") {
+      |     ^~~~~~~
+make[2]: *** [CMakeFiles/test_codegen.dir/build.make:76: CMakeFiles/test_codegen.dir/test/test_codegen.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+toyc_compiler/include/ast.h:69:40: error: ‘Type’ has not been declared
+   69 |     VarDeclStmt(const std::string &vt, Type type, std::unique_ptr<Expr> init)
+      |                                        ^~~~
+toyc_compiler/include/ast.h:74:5: error: ‘VarDeclStmt::VarDeclStmt(const std::string&, int, std::unique_ptr<Expr>)’ cannot be overloaded with ‘VarDeclStmt::VarDeclStmt(const std::string&, int, std::unique_ptr<Expr>)’
+   74 |     VarDeclStmt(const std::string &vt, int /*type*/, std::unique_ptr<Expr> init)
+      |     ^~~~~~~~~~~
+toyc_compiler/include/ast.h:69:5: note: previous declaration ‘VarDeclStmt::VarDeclStmt(const std::string&, int, std::unique_ptr<Expr>)’
+   69 |     VarDeclStmt(const std::string &vt, Type type, std::unique_ptr<Expr> init)
+      |     ^~~~~~~~~~~
+In file included from toyc_compiler/include/semantic.h:4,
+                 from toyc_compiler/src/semantic.cpp:1:
+toyc_compiler/include/ast.h:39:36: error: ‘Type’ has not been declared
+   39 |     FuncDef(const std::string &rt, Type type) : retType(rt), name("") {
+      |                                    ^~~~
+toyc_compiler/include/ast.h:43:5: error: ‘FuncDef::FuncDef(const std::string&, int)’ cannot be overloaded with ‘FuncDef::FuncDef(const std::string&, int)’
+   43 |     FuncDef(const std::string &rt, int /*type*/) : retType(rt), name("") {}
+      |     ^~~~~~~
+toyc_compiler/include/ast.h:39:5: note: previous declaration ‘FuncDef::FuncDef(const std::string&, int)’
+   39 |     FuncDef(const std::string &rt, Type type) : retType(rt), name("") {
+      |     ^~~~~~~
+toyc_compiler/include/ast.h:69:40: error: ‘Type’ has not been declared
+   69 |     VarDeclStmt(const std::string &vt, Type type, std::unique_ptr<Expr> init)
+      |                                        ^~~~
+toyc_compiler/include/ast.h:74:5: error: ‘VarDeclStmt::VarDeclStmt(const std::string&, int, std::unique_ptr<Expr>)’ cannot be overloaded with ‘VarDeclStmt::VarDeclStmt(const std::string&, int, std::unique_ptr<Expr>)’
+   74 |     VarDeclStmt(const std::string &vt, int /*type*/, std::unique_ptr<Expr> init)
+      |     ^~~~~~~~~~~
+toyc_compiler/include/ast.h:69:5: note: previous declaration ‘VarDeclStmt::VarDeclStmt(const std::string&, int, std::unique_ptr<Expr>)’
+   69 |     VarDeclStmt(const std::string &vt, Type type, std::unique_ptr<Expr> init)
+      |     ^~~~~~~~~~~
+make[2]: *** [CMakeFiles/test_semantic.dir/build.make:132: CMakeFiles/test_semantic.dir/src/codegen.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:169: CMakeFiles/test_semantic.dir/all] Error 2
+In file included from toyc_compiler/include/parser.h:3,
+                 from toyc_compiler/src/parser.cpp:1:
+toyc_compiler/include/ast.h:39:36: error: ‘Type’ has not been declared
+   39 |     FuncDef(const std::string &rt, Type type) : retType(rt), name("") {
+      |                                    ^~~~
+toyc_compiler/include/ast.h:43:5: error: ‘FuncDef::FuncDef(const std::string&, int)’ cannot be overloaded with ‘FuncDef::FuncDef(const std::string&, int)’
+   43 |     FuncDef(const std::string &rt, int /*type*/) : retType(rt), name("") {}
+      |     ^~~~~~~
+toyc_compiler/include/ast.h:39:5: note: previous declaration ‘FuncDef::FuncDef(const std::string&, int)’
+   39 |     FuncDef(const std::string &rt, Type type) : retType(rt), name("") {
+      |     ^~~~~~~
+toyc_compiler/include/ast.h:69:40: error: ‘Type’ has not been declared
+   69 |     VarDeclStmt(const std::string &vt, Type type, std::unique_ptr<Expr> init)
+      |                                        ^~~~
+toyc_compiler/include/ast.h:74:5: error: ‘VarDeclStmt::VarDeclStmt(const std::string&, int, std::unique_ptr<Expr>)’ cannot be overloaded with ‘VarDeclStmt::VarDeclStmt(const std::string&, int, std::unique_ptr<Expr>)’
+   74 |     VarDeclStmt(const std::string &vt, int /*type*/, std::unique_ptr<Expr> init)
+      |     ^~~~~~~~~~~
+toyc_compiler/include/ast.h:69:5: note: previous declaration ‘VarDeclStmt::VarDeclStmt(const std::string&, int, std::unique_ptr<Expr>)’
+   69 |     VarDeclStmt(const std::string &vt, Type type, std::unique_ptr<Expr> init)
+      |     ^~~~~~~~~~~
+In file included from toyc_compiler/include/semantic.h:4,
+                 from toyc_compiler/src/semantic.cpp:1:
+toyc_compiler/include/ast.h:39:36: error: ‘Type’ has not been declared
+   39 |     FuncDef(const std::string &rt, Type type) : retType(rt), name("") {
+      |                                    ^~~~
+toyc_compiler/include/ast.h:43:5: error: ‘FuncDef::FuncDef(const std::string&, int)’ cannot be overloaded with ‘FuncDef::FuncDef(const std::string&, int)’
+   43 |     FuncDef(const std::string &rt, int /*type*/) : retType(rt), name("") {}
+      |     ^~~~~~~
+toyc_compiler/include/ast.h:39:5: note: previous declaration ‘FuncDef::FuncDef(const std::string&, int)’
+   39 |     FuncDef(const std::string &rt, Type type) : retType(rt), name("") {
+      |     ^~~~~~~
+toyc_compiler/include/ast.h:69:40: error: ‘Type’ has not been declared
+   69 |     VarDeclStmt(const std::string &vt, Type type, std::unique_ptr<Expr> init)
+      |                                        ^~~~
+toyc_compiler/include/ast.h:74:5: error: ‘VarDeclStmt::VarDeclStmt(const std::string&, int, std::unique_ptr<Expr>)’ cannot be overloaded with ‘VarDeclStmt::VarDeclStmt(const std::string&, int, std::unique_ptr<Expr>)’
+   74 |     VarDeclStmt(const std::string &vt, int /*type*/, std::unique_ptr<Expr> init)
+      |     ^~~~~~~~~~~
+toyc_compiler/include/ast.h:69:5: note: previous declaration ‘VarDeclStmt::VarDeclStmt(const std::string&, int, std::unique_ptr<Expr>)’
+   69 |     VarDeclStmt(const std::string &vt, Type type, std::unique_ptr<Expr> init)
+      |     ^~~~~~~~~~~
+In file included from toyc_compiler/include/codegen.h:2,
+                 from toyc_compiler/src/codegen.cpp:1:
+toyc_compiler/include/ast.h:39:36: error: ‘Type’ has not been declared
+   39 |     FuncDef(const std::string &rt, Type type) : retType(rt), name("") {
+      |                                    ^~~~
+toyc_compiler/include/ast.h:43:5: error: ‘FuncDef::FuncDef(const std::string&, int)’ cannot be overloaded with ‘FuncDef::FuncDef(const std::string&, int)’
+   43 |     FuncDef(const std::string &rt, int /*type*/) : retType(rt), name("") {}
+      |     ^~~~~~~
+toyc_compiler/include/ast.h:39:5: note: previous declaration ‘FuncDef::FuncDef(const std::string&, int)’
+   39 |     FuncDef(const std::string &rt, Type type) : retType(rt), name("") {
+      |     ^~~~~~~
+toyc_compiler/include/ast.h:69:40: error: ‘Type’ has not been declared
+   69 |     VarDeclStmt(const std::string &vt, Type type, std::unique_ptr<Expr> init)
+      |                                        ^~~~
+toyc_compiler/include/ast.h:74:5: error: ‘VarDeclStmt::VarDeclStmt(const std::string&, int, std::unique_ptr<Expr>)’ cannot be overloaded with ‘VarDeclStmt::VarDeclStmt(const std::string&, int, std::unique_ptr<Expr>)’
+   74 |     VarDeclStmt(const std::string &vt, int /*type*/, std::unique_ptr<Expr> init)
+      |     ^~~~~~~~~~~
+toyc_compiler/include/ast.h:69:5: note: previous declaration ‘VarDeclStmt::VarDeclStmt(const std::string&, int, std::unique_ptr<Expr>)’
+   69 |     VarDeclStmt(const std::string &vt, Type type, std::unique_ptr<Expr> init)
+      |     ^~~~~~~~~~~
+make[2]: *** [CMakeFiles/test_codegen.dir/build.make:104: CMakeFiles/test_codegen.dir/src/parser.cpp.o] Error 1
+make[2]: *** [CMakeFiles/test_codegen.dir/build.make:118: CMakeFiles/test_codegen.dir/src/semantic.cpp.o] Error 1
+make[2]: *** [CMakeFiles/test_codegen.dir/build.make:132: CMakeFiles/test_codegen.dir/src/codegen.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:195: CMakeFiles/test_codegen.dir/all] Error 2
+make[2]: *** [CMakeFiles/toyc.dir/build.make:104: CMakeFiles/toyc.dir/src/parser.cpp.o] Error 1
+make[2]: *** [CMakeFiles/toyc.dir/build.make:118: CMakeFiles/toyc.dir/src/semantic.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:91: CMakeFiles/toyc.dir/all] Error 2
+make: *** [Makefile:146: all] Error 2
