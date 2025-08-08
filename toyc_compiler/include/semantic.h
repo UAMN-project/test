@@ -7,8 +7,6 @@
 #include <string>
 #include <vector>
 
-enum class Type { Int, Void, Unknown };
-
 struct Symbol {
     Type type = Type::Unknown;
     bool isFunction = false;

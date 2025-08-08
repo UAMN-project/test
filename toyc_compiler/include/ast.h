@@ -36,7 +36,11 @@ struct FuncDef : ASTNode {
 
     FuncDef(const std::string &rt, const std::string &n) : retType(rt), name(n) {}
     // 添加接受Type枚举的构造函数
-    FuncDef(const std::string &rt, int type) : retType(rt), name("") {}
+    FuncDef(const std::string &rt, Type type) : retType(rt), name("") {
+        // 可以根据type进行初始化，这里暂时忽略
+        (void)type;
+    }
+    FuncDef(const std::string &rt, int /*type*/) : retType(rt), name("") {}
 };
 
 // Block
@@ -62,7 +66,12 @@ struct VarDeclStmt : Stmt {
         : varType(vt), name(n), initializer(std::move(init)) {}
     
     // 添加接受Type枚举的构造函数
-    VarDeclStmt(const std::string &vt, int type, std::unique_ptr<Expr> init)
+    VarDeclStmt(const std::string &vt, Type type, std::unique_ptr<Expr> init)
+        : varType(vt), name(""), initializer(std::move(init)) {
+        // 可以根据type进行初始化，这里暂时忽略
+        (void)type;
+    }
+    VarDeclStmt(const std::string &vt, int /*type*/, std::unique_ptr<Expr> init)
         : varType(vt), name(""), initializer(std::move(init)) {}
 };
 
@@ -136,8 +145,9 @@ struct BreakStmt : Stmt {};
 
 struct ContinueStmt : Stmt {};
 
-// 添加Type枚举定义
+// Type枚举定义 - 用于AST节点类型
 enum class Type {
     Int,
-    Void
+    Void,
+    Unknown
 };
