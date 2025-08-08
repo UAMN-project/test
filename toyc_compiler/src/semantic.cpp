@@ -102,7 +102,7 @@ void SemanticAnalyzer::analyzeExpr(Expr* expr) {
             reportError("Variable '" + var->name + "' used before declaration");
         }
     }
-    else if (auto num = dynamic_cast<NumberExpr*>(expr)) {
+    else if (dynamic_cast<NumberExpr*>(expr)) {
         // 数字不需要检查
     }
     else if (auto bin = dynamic_cast<BinaryExpr*>(expr)) {
