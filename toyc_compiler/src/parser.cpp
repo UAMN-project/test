@@ -124,17 +124,13 @@ std::unique_ptr<Stmt> Parser::parseVarDecl() {
 
 std::unique_ptr<Stmt> Parser::parseIfStmt() {
     expect(TokenType::IF, "Expected 'if'");
-
     expect(TokenType::LPAREN, "Expected '(' after if");
-
     auto cond = parseExpr();
-
     expect(TokenType::RPAREN, "Expected ')' after if condition");
 
     auto thenBlock = parseStmt();
-
     std::unique_ptr<Block> thenBlk = nullptr;
-    if (auto blk = dynamic_cast<Block*>(thenBlock.get())) {
+    if (dynamic_cast<Block*>(thenBlock.get())) {
         thenBlk = std::unique_ptr<Block>(static_cast<Block*>(thenBlock.release()));
     } else {
         thenBlk = std::make_unique<Block>();
@@ -144,7 +140,7 @@ std::unique_ptr<Stmt> Parser::parseIfStmt() {
     std::unique_ptr<Block> elseBlk = nullptr;
     if (match(TokenType::ELSE)) {
         auto elseStmt = parseStmt();
-        if (auto blk = dynamic_cast<Block*>(elseStmt.get())) {
+        if (dynamic_cast<Block*>(elseStmt.get())) {
             elseBlk = std::unique_ptr<Block>(static_cast<Block*>(elseStmt.release()));
         } else {
             elseBlk = std::make_unique<Block>();
@@ -157,17 +153,13 @@ std::unique_ptr<Stmt> Parser::parseIfStmt() {
 
 std::unique_ptr<Stmt> Parser::parseWhileStmt() {
     expect(TokenType::WHILE, "Expected 'while'");
-
     expect(TokenType::LPAREN, "Expected '(' after while");
-
     auto cond = parseExpr();
-
     expect(TokenType::RPAREN, "Expected ')' after while condition");
 
     auto bodyStmt = parseStmt();
-
     std::unique_ptr<Block> bodyBlk = nullptr;
-    if (auto blk = dynamic_cast<Block*>(bodyStmt.get())) {
+    if (dynamic_cast<Block*>(bodyStmt.get())) {
         bodyBlk = std::unique_ptr<Block>(static_cast<Block*>(bodyStmt.release()));
     } else {
         bodyBlk = std::make_unique<Block>();
