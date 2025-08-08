@@ -1,4 +1,5 @@
 #include "codegen.h"
+#include <sstream>
 #include "ast.h"
 #include "semantic.h"
 #include <memory>
@@ -14,8 +15,11 @@ void testSimpleFunction() {
     auto func = std::make_unique<FuncDef>("int", "main");
     func->body = std::move(block);
 
-    CodeGen codegen;
-    codegen.generate({func.get()});
+    std::ostringstream oss;
+    CodeGen codegen(oss);
+    std::vector<std::unique_ptr<FuncDef>> funcs;
+    funcs.push_back(std::move(func));
+    codegen.generate(funcs);
 }
 
 void testArithmeticOperations() {
@@ -55,8 +59,11 @@ void testArithmeticOperations() {
     auto func = std::make_unique<FuncDef>("int", "main");
     func->body = std::move(block);
 
-    CodeGen codegen;
-    codegen.generate({func.get()});
+    std::ostringstream oss;
+    CodeGen codegen(oss);
+    std::vector<std::unique_ptr<FuncDef>> funcs;
+    funcs.push_back(std::move(func));
+    codegen.generate(funcs);
 }
 
 void testIfStatement() {
@@ -93,8 +100,11 @@ void testIfStatement() {
     auto func = std::make_unique<FuncDef>("int", "main");
     func->body = std::move(block);
 
-    CodeGen codegen;
-    codegen.generate({func.get()});
+    std::ostringstream oss;
+    CodeGen codegen(oss);
+    std::vector<std::unique_ptr<FuncDef>> funcs;
+    funcs.push_back(std::move(func));
+    codegen.generate(funcs);
 }
 
 void testWhileLoop() {
@@ -134,8 +144,11 @@ void testWhileLoop() {
     auto func = std::make_unique<FuncDef>("int", "main");
     func->body = std::move(block);
 
-    CodeGen codegen;
-    codegen.generate({func.get()});
+    std::ostringstream oss;
+    CodeGen codegen(oss);
+    std::vector<std::unique_ptr<FuncDef>> funcs;
+    funcs.push_back(std::move(func));
+    codegen.generate(funcs);
 }
 
 int main() {

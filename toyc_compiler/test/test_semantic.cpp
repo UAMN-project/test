@@ -88,8 +88,8 @@ void test_function_call_args() {
     
     // 声明函数foo(int x, int y)
     auto foo = std::make_unique<FuncDef>("foo", Type::Int);
-    foo->params.push_back({"x", Type::Int});
-    foo->params.push_back({"y", Type::Int});
+    foo->params.push_back(FuncDef::Param("int", "x"));
+    foo->params.push_back(FuncDef::Param("int", "y"));
     foo->body = std::make_unique<Block>();
     
     // 声明main函数

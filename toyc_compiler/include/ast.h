@@ -35,6 +35,8 @@ struct FuncDef : ASTNode {
     std::unique_ptr<class Block> body;
 
     FuncDef(const std::string &rt, const std::string &n) : retType(rt), name(n) {}
+    // 添加接受Type枚举的构造函数
+    FuncDef(const std::string &rt, int type) : retType(rt), name("") {}
 };
 
 // Block
@@ -45,6 +47,9 @@ struct Block : Stmt {
 // Return Statement
 struct ReturnStmt : Stmt {
     std::unique_ptr<Expr> expr;
+    
+    ReturnStmt() = default;
+    ReturnStmt(std::unique_ptr<Expr> e) : expr(std::move(e)) {}
 };
 
 // Variable Declaration Statement
@@ -55,6 +60,10 @@ struct VarDeclStmt : Stmt {
 
     VarDeclStmt(const std::string &vt, const std::string &n, std::unique_ptr<Expr> init)
         : varType(vt), name(n), initializer(std::move(init)) {}
+    
+    // 添加接受Type枚举的构造函数
+    VarDeclStmt(const std::string &vt, int type, std::unique_ptr<Expr> init)
+        : varType(vt), name(""), initializer(std::move(init)) {}
 };
 
 // Expressions
@@ -86,6 +95,9 @@ struct CallExpr : Expr {
     std::string callee;
     std::vector<std::unique_ptr<Expr>> args;
     CallExpr(std::string c) : callee(std::move(c)) {}
+    // 添加接受参数列表的构造函数
+    CallExpr(std::string c, std::vector<std::unique_ptr<Expr>> a)
+        : callee(std::move(c)), args(std::move(a)) {}
 };
 // 如果有这些语句，就需要这样补
 
@@ -123,3 +135,9 @@ struct WhileStmt : Stmt {
 struct BreakStmt : Stmt {};
 
 struct ContinueStmt : Stmt {};
+
+// 添加Type枚举定义
+enum class Type {
+    Int,
+    Void
+};

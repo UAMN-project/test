@@ -7,6 +7,7 @@
 #include <sstream>
 #include <string>
 #include <cstring>
+#include <memory>
 
 void printHelp() {
     std::cout << "ToyC Compiler v0.1.0\n"
@@ -79,15 +80,17 @@ int main(int argc, char* argv[]) {
 
         // 语法分析
         Parser parser(tokens);
-        auto ast = parser.parse();
+        auto ast = parser.parseCompUnit();
 
         // 语义分析
         SemanticAnalyzer analyzer;
         analyzer.analyze(ast);
 
         // 代码生成
-        CodeGen codegen;
-        std::string output = codegen.generate(ast);
+        std::ostringstream oss;
+        CodeGen codegen(oss);
+        codegen.generate(ast);
+        std::string output = oss.str();
 
         // 输出
         if (hasOutputFile) {
