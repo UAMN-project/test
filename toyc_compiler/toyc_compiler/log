@@ -1,0 +1,76 @@
+1、
+Semantic error: Unknown statement type
+Semantic error: Unknown statement type
+Semantic error: Unknown statement type
+toyc: toyc_compiler/src/codegen.cpp:47: std::string CodeGen::genExpr(Expr*): Assertion `false && "Unsupported binary operator"' failed.
+Aborted (core dumped)
+
+源码：
+int main() {
+    int x = 3;
+    if (x > 4) {
+        x = x + 1;
+    } else {
+        x = x - 1;
+    }
+    return x;
+}
+
+2、
+Segmentation fault (core dumped)
+
+源码：
+int add(int a, int b) {
+    return a + b;
+}
+
+int main() {
+    int x = add(120, 115);
+    return x;
+}
+
+3、
+Semantic error: Unknown statement type
+Semantic error: Unknown statement type
+toyc: toyc_compiler/src/codegen.cpp:143: void CodeGen::genStmt(Stmt*): Assertion `false && "Unknown Stmt type"' failed.
+Aborted (core dumped)
+
+源码：
+int main() {
+    int x = 352;
+    {
+        int x = 2;
+        x = x + 1;
+    }
+    return x;
+}
+
+4、
+Error: Expected primary expression
+
+源码：
+void print() {
+    int x = 1;
+    x = x + 1;
+    ;
+}
+
+int main() {
+    print();
+    return 608;
+}
+
+5、
+
+输出比较：
+- 90
++ 96
+
+源码：
+int main() {
+    int x = 290 + 552 * 411;
+    return x; // 227162
+}
+
+6、
+Error: cannot open input file '-opt'
